@@ -1,4 +1,4 @@
-const { useState, useEffect } = require("react");
+import { useEffect, useState } from "react";
 
 export const useIntersectionObserver = () => {
     const [hasAnimated, setHasAnimated] = useState({});
