@@ -3,6 +3,7 @@ import './App.css'
 import Navigation from './components/Navigation'
 import { useIntersectionObserver } from './hooks/useInteractionObserver'
 import {useScrollToTop} from './hooks/useScrollToTop'
+import { Hero } from './components/Hero'
 
 function App() {
   const hasAnimated = useIntersectionObserver();
@@ -10,8 +11,9 @@ function App() {
 
 
   return (
-    <div className="min-h-screen bg-white text-black">
+    <div className="min-h-screen bg-white text-black flex justify-center items-center">
       <Navigation/>
+      <Hero hasANimated={hasAnimated}/>
     </div>
   );
 };

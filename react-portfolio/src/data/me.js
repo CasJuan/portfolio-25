@@ -4,7 +4,7 @@ export const meData = {
     roles: [
         "Frontend Developer"
     ],
-    descripcion:"",
+    descripcion:"Apasionado por el desarrollo, me gusta crar cosa nuevas, cosas visibles que mejores la experiencias de usaurios",
     stats: [
         {number:"5+", label:"Yers Experience"}
     ],
