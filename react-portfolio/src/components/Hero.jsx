@@ -57,7 +57,7 @@ export const Hero = ({ hasAnimated }) => {
                 </div>
             </div>
 
-            <div className="absolute inset-0 bg-[linear-gradient((rgba0,0,0,0,0.2)_1px, transparent_1px), linear-gradient(90deg, rgba(0,0,0,0.2)_1px, transparent_1px)] bg-[size:50px_50px]">
+            <div className="absolute inset-0 bg-[linear-gradient((rgba0,0,0,0,0.2)_1px, transparent_1px), linear-gradient(90deg, rgba(0,0,0,0.2)_1px, transparent_1px)] bg-size-[50px_50px]">
             </div>
 
             <div className="relative z-10 max-w-6xl mx-auto px-6 text-center h-full flex flex-col justify-center">
