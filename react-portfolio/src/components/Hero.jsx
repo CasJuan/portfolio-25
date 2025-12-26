@@ -61,7 +61,7 @@ export const Hero = ({ hasAnimated }) => {
             </div>
 
             <div className="relative z-10 max-w-6xl mx-auto px-6 text-center h-full flex flex-col justify-center">
-                <div id='hero' /* className={`transition-all duration-1000 ${hasAnimated.hero ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} */>
+                <div id='hero' /* className={`transition-all duration-1000 ${hasAnimated.hero ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} */ >
                     <div className="mb-4">
                         <span className="inline-block px-4 py-2 bg-black text-white rounded-full text-sm font-medium animate-fade-in">
                             {meData.saludos}

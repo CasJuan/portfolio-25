@@ -6,7 +6,7 @@ export const meData = {
     ],
     descripcion:"Apasionado por el desarrollo, me gusta crar cosa nuevas, cosas visibles que mejores la experiencias de usaurios",
     stats: [
-        {number:"5+", label:"Yers Experience"}
+        {number:"1+", label:"Ano de experiencia"}
     ],
     socialLinks: [
         {

@@ -1,9 +1,9 @@
-import { useState } from 'react'
 import './App.css'
 import Navigation from './components/Navigation'
 import { useIntersectionObserver } from './hooks/useInteractionObserver'
 import {useScrollToTop} from './hooks/useScrollToTop'
 import { Hero } from './components/Hero'
+import { About } from './components/About'
 
 function App() {
   const hasAnimated = useIntersectionObserver();
@@ -13,7 +13,8 @@ function App() {
   return (
     <div className="min-h-screen bg-white text-black flex justify-center items-center">
       <Navigation/>
-      <Hero hasANimated={hasAnimated}/>
+      <Hero hasAnimated={hasAnimated}/>
+      <About hasAnimated={hasAnimated}/>
     </div>
   );
 };
