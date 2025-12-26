@@ -34,7 +34,27 @@ export const About = ({hasAnimated}) => {
                         About
                     </h2>
                     <div className='grid md:grid-cols-2 gap-12 items-center'>
-                        <div></div>
+                        <div>
+                            <p className=' text-lg text-gray-700 mb-6'>Soy un apasiionante de las programacion me encntaa .....</p>
+                            <p className=' text-lg text-gray-700 mb-6'>Soy un apasiionante de las programacion me encntaa .....</p>
+                            <div className="flex space-x-4">
+                                <Github className=' w-6 h-6 text-gray-600 hover:text-black cursor-pointer transition-colors' />
+                                <Linkedin className=' w-6 h-6 text-gray-600 hover:text-black cursor-pointer transition-colors' />
+                                <Mail className=' w-6 h-6 text-gray-600 hover:text-black cursor-pointer transition-colors' />
+                            </div>
+                        </div>
+
+                        <div className="grid grid-cols-2 gap-6">
+                            {features.map ((feature, index) => (
+                                <div key={index} className=' bg-white p-6 rounded-lg shadow-sm border border-gray-200'>
+                                    {feature.icon}
+                                    <h3 className=' font-semibold mb-2'>
+                                        {feature.title}
+                                    </h3>
+                                    <p className=" text-gray-600 text-sm">{feature.description}</p>
+                                </div>
+                            ))}
+                        </div>
 
                     </div>
 

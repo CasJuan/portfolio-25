@@ -11,7 +11,7 @@ function App() {
 
 
   return (
-    <div className="min-h-screen bg-white text-black flex justify-center items-center">
+    <div className="min-h-screen bg-white text-black flex flex-col justify-center items-center">
       <Navigation/>
       <Hero hasAnimated={hasAnimated}/>
       <About hasAnimated={hasAnimated}/>
