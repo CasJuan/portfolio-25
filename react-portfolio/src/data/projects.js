@@ -1,13 +1,13 @@
 export const projects = [
     {
-        titulo: "",
-        descripcion: "",
-        tech: ["","",""],
+        titulo: "Colegium",
+        descripcion: "Plataforma de colegios para su gestion",
+        tech: ["React","Github"],
         github: "",
         demo: ""
     },
     {
-        titulo: "",
+        titulo: "DevTalles",
         descripcion: "",
         tech: ["","",""],
         github: "",

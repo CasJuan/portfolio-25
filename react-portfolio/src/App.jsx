@@ -4,6 +4,7 @@ import { useIntersectionObserver } from './hooks/useInteractionObserver'
 import {useScrollToTop} from './hooks/useScrollToTop'
 import { Hero } from './components/Hero'
 import { About } from './components/About'
+import { Projects } from './components/Projects'
 
 function App() {
   const hasAnimated = useIntersectionObserver();
@@ -15,6 +16,7 @@ function App() {
       <Navigation/>
       <Hero hasAnimated={hasAnimated}/>
       <About hasAnimated={hasAnimated}/>
+      <Projects hasAnimated={hasAnimated}/>
     </div>
   );
 };
