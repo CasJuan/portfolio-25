@@ -7,6 +7,7 @@ import { About } from './components/About'
 import { Projects } from './components/Projects'
 import { Skills } from './components/Skills'
 import {Contact} from './components/Contact'
+import { Footer } from './components/Footer'
 
 function App() {
   const hasAnimated = useIntersectionObserver();
@@ -21,6 +22,7 @@ function App() {
       <Projects hasAnimated={hasAnimated}/>
       <Skills hasAnimated={hasAnimated}/>
       <Contact hasAnimated={hasAnimated}/>
+      <Footer/>
     </div>
   );
 };
