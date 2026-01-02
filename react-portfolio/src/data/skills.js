@@ -1,10 +1,15 @@
 export const skills = [
     {
-        category: "FrontEnd",
-        items: ["React", "Vue.js"]
+        category: "Frontend",
+        items: ["HTML5", 'JavaScript','Vue.js','Tailwind CSS','React']
     },
     {
-        category: "Tools",
-        items: ["Github", "Scrum"]
-    }
+        category: "Herramientas & Workflow",
+        items: ["Git", "Bitbucket / GitHub",'Docker','MySQL', 'Scrum']
+    },
+    {
+        category: "Soft Skills",
+        items: ["Aprendizaje continuo", "Trabajo en equipo",'Adaptabilidad','Comunicación clara']
+    },
+
 ]
