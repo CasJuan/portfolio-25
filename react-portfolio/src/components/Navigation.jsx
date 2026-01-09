@@ -14,15 +14,15 @@ const Navigation = () => {
     setIsMobileMenuOpen(false);
   }
 
-  const scrollToSection = () => {
+  const scrollToSection = (href) => {
     const element = document.querySelector(href);
     if (element) {
-      const navHeight = 60;
-      const elemenPosition = element.offsetTop - navHeight;
+      const navHeight = 60; // height of fixed nav
+      const elementPosition = element.offsetTop - navHeight;
       window.scrollTo({
-        top: elemenPosition,
+        top: elementPosition,
         behavior: 'smooth'
-      })
+      });
     }
     closeMobileMenu();
   };
@@ -36,7 +36,7 @@ const Navigation = () => {
   }, [])
 
   const navItems = [
-    { href: '#about', label: 'About' },
+    { href: '#about', label: 'Sobre mì' },
     { href: '#projects', label: 'Proyectos' },
     { href: '#skills', label: 'Skills' },
     { href: '#contact', label: 'Contacto' },
@@ -46,10 +46,16 @@ const Navigation = () => {
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm' : 'bg-transparent'}`}>
       <div className='max-w-6xl mx-auto px-6 py-4 '>
         <div className='flex justify-between items-center'>
-          <div className={`text-xl font-bold transition-color cursor-pointer hover:opacity-80 ${isScrolled ? 'text-black' : 'text-black'}`} onclick={() => window.scrollTo({
+          <div
+            className={`text-xl font-bold transition-color cursor-pointer hover:opacity-80 ${isScrolled ? 'text-black' : 'text-black'}`}
+            onClick={() => window.scrollTo({
               top: 0,
               behavior: 'smooth'
-          })}>
+            })}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') window.scrollTo({ top: 0, behavior: 'smooth' }) }}
+          >
             Juan Castro
           </div>
 

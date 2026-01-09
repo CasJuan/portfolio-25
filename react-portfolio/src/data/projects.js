@@ -1,5 +1,5 @@
 export const projects = [
-    {
+    /* {
         titulo: "Colegium",
         descripcion: "Plataforma de colegios para su gestion",
         tech: ["React","Github"],
@@ -12,5 +12,5 @@ export const projects = [
         tech: ["","",""],
         github: "",
         demo: ""
-    }
+    } */
 ]

@@ -17,7 +17,7 @@ export const About = ({ hasAnimated }) => {
 
 
     return (
-        <section id='about' className=' py-16 px-6 bg-gray-50'>
+        <section id='about' className=' py-16 px-6'>
             <div className='max-w-6xl mx-auto'>
                 <div className={`transition-all duration-1000 delay-200  ${hasAnimated.about ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                     <h2 className=' text-4xl font-bold mb-12 text-center'>
@@ -25,10 +25,10 @@ export const About = ({ hasAnimated }) => {
                     </h2>
                     <div className='grid md:grid-cols-2 gap-12 items-center'>
                         <div className=' flex flex-col justify-center items-center'>
-                            <p className=' text-lg text-gray-700 mb-6'>Soy desarrollador Frontend enfocado en crear interfaces claras y funcionales. Trabajo con Vue.js y Tailwind CSS en proyectos reales de producto.</p>
-                            <p className=' text-lg text-gray-700 mb-6'>Soy Analista de Sistemas y actualmente curso la Licenciatura en Tecnologías Digitales, con foco en el aprendizaje continuo y el crecimiento profesional.</p>
+                            <p className=' text-lg text-gray-700 mb-6'>Me desempeño como desarrollador Frontend en proyectos de producto, trabajando en equipo con backend, diseño y scrum. Mi interés principal está en el frontend visual y la experiencia de usuario, aportando tanto desde el desarrollo como desde el diseño.</p>
+                            <p className=' text-lg text-gray-700 mb-6'>Soy Analista de Sistemas y actualmente curso la Licenciatura en Tecnologías Digitales, complementando la formación académica con la experiencia profesional.</p>
                             <div className="flex space-x-4">
-                                <a href=''><Github className=' w-6 h-6 text-gray-600 hover:text-black cursor-pointer transition-colors' /></a>
+                                <a href='https://github.com/CasJuan' target='_blank'><Github  className=' w-6 h-6 text-gray-600 hover:text-black cursor-pointer transition-colors' /></a>
                                 <a href="https://www.linkedin.com/in/juan-ignaciocastro/" target='_blank'><Linkedin className=' w-6 h-6 text-gray-600 hover:text-black cursor-pointer transition-colors' /></a>
                             </div>
                         </div>

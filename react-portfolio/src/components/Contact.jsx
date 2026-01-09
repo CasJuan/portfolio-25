@@ -13,21 +13,21 @@ export const Contact = ({ hasAnimated }) => {
             <div className=' max-w-4xl mx-auto text-center'>
                 <div className={` transition-all duration-1000 delay-500 ${hasAnimated.contact ? ' opacity-100 translate-y-0' : ' opacity-0 translate-y-10'}`}>
                     <h2 className=' text-4xl font-bold mb-8'>
-                        ¿Tenés un proyecto en mente o te gustaría trabajar juntos?
+                        Siempre aprendiendo
                     </h2>
                     <p className=' text-xl text-gray-600 mb-12 max-w-2xl mx-auto'>
-                        Estoy abierto a nuevas oportunidades y desafíos donde pueda aportar valor como desarrollador frontend.
+                        Busco crecer como frontend, mejorando mis conocimientos técnicos y desafiándome constantemente.
                     </p>
-                    <p className=' text-base text-gray-600 mb-12 max-w-2xl mx-auto'>
-                        Siempre estoy buscando nuevos desafíos que me permitan aprender y crecer profesionalmente. Me interesa desarrollarme aún más dentro del mundo del frontend y explorar tecnologías que potencien la experiencia digital
+                    <p className=' text-base text-gray-600 mb-12 max-w-2xl mx-auto italic'>
+                        “Aprender a volar entre tanta gente de pie.”
                     </p>
                     <div className=' flex flex-col sm:flex-row justify-center gap-4 sm:gap-8'>
-                        <a href={contactLinksWithIcons[1].href} className={`flex items-center justify-center w-full sm:w-auto ${contactLinksWithIcons[1].className}`}>
+                        <a href={contactLinksWithIcons[1].href} target='_blank' className={`flex items-center justify-center w-full sm:w-auto ${contactLinksWithIcons[1].className}`}>
                             {contactLinksWithIcons[1].icon}
                             {contactLinksWithIcons[1].label}
                         </a>
                         <div className="flex gap-4 sm:gap-8">
-                            <a href={contactLinksWithIcons[1].href} className={`flex items-center justify-center flex-1 sm:flex-none ${contactLinksWithIcons[2].className}`}>
+                            <a href={contactLinksWithIcons[1].href} target='_blank' className={`flex items-center justify-center flex-1 sm:flex-none ${contactLinksWithIcons[2].className}`}>
                                 {contactLinksWithIcons[2].icon}
                                 {contactLinksWithIcons[2].label}
                             </a>
